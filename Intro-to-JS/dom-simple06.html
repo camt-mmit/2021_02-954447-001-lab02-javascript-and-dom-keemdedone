@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>My DOM</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- สำหรับ material-icon class -->
+        <link rel="stylesheet" href="./css/main06.css">
+        <script type="module" src="./js/main-simple06.js"> </script>
+    </head>
+    <body>
+        <!--- input part --> 
+        <template id="tmp-input">
+            <div class="cmp-input-container">
+                <label>
+                    <b>Number <span class="cmp-input-number cl-number"></span></b>
+                    <input type="number" value="0" required />
+                </label>
+                <button type="button" class="cmd-remove-input">
+                    <i class="material-icons">
+                        delete_forever
+                    </i> 
+                </button>
+            </div>
+        </template>
+        <!--- end input part -->
+
+        <!--- section part --> 
+        <template id="tmp-section">
+            <section class="cmp-section-container">
+                <button type="button" class="cmd-add-input">
+                    <i class="material-icons">
+                        add_circle
+                    </i>
+                    <text class="cmd-input-text">input</text>  
+                </button>
+                <label>
+                    <b>Section >> <span class="cmp-sec-no cl-number"></span></b>
+                </label>
+                <button type="button" class="cmd-remove-sec">
+                    <i class="material-icons">
+                        delete_forever
+                    </i> 
+                </button>
+                <div class="cmp-inputs-container"></div>
+                <div class="cmp-input-container">
+                    <label>
+                        <b>Result</b>
+                        <output class="cmp-result cl-number">0</output>
+                    </label>
+                    <span class="cl-dummy"></span>
+                </div>
+            </section>
+        </template>
+        <!--- end section part -->
+
+        <main class="cmp-main-container">
+            <button type="button" class="cmd-add-section">
+                <i class="material-icons">
+                    add
+                </i>
+                <text class="cmd-section-text">Section</text>
+            </button>
+            <div class="cmp-sections-container"></div>
+        </main>
+    </body>
+</html>
