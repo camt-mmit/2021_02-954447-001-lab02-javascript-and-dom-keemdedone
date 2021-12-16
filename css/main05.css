@@ -1,0 +1,4 @@
+button>*, /* >* คือ การถัดไป 1 ชั้นเท่านั้น */ 
+.cl-action>* {
+    pointer-events: none;
+}
